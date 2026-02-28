@@ -2,6 +2,13 @@
 
 This repository contains the code to reproduce the experiments of the paper [Slicing Unbalanced Optimal Transport](https://openreview.net/forum?id=AjJTg5M0r8). We propose in this paper two ways of slicing the unbalanced optimal transport (UOT) problem. The first ones averages the UOT problem between distributions projected over lines (SUOT). The second ones performs a global reweighting of the input measures (USOT).
 
+## ℹ️ Project Status
+
+![Status](https://img.shields.io/badge/status-not%20actively%20maintained-yellow)
+
+A maintained version of the code of USOT and SUOT can be found in the [POT](https://pythonot.github.io/gen_modules/ot.unbalanced.html) library, see `ot.unbalanced.unbalanced_sliced_ot` and `ot.unbalanced.sliced_unbalanced_ot`.
+
+
 ## Abstract
 
 Optimal transport (OT) is a powerful framework to compare probability measures, a fundamental task in many statistical and machine learning problems. Substantial advances have been made in designing OT variants which are either computationally and statistically more efficient or robust. Among them, sliced OT distances have been extensively used to mitigate optimal transport's cubic algorithmic complexity and curse of dimensionality. In parallel, unbalanced OT was designed to allow comparisons of more general positive measures, while being more robust to outliers. In this paper, we bridge the gap between those two concepts and develop a general framework for efficiently comparing positive measures. We notably formulate two different versions of sliced unbalanced OT, and study the associated topology and statistical properties. We then develop a GPU-friendly Frank-Wolfe like algorithm to compute the corresponding loss functions, and show that the resulting methodology is modular as it encompasses and extends prior related work.  We finally conduct an empirical analysis of our loss functions and methodology on both synthetic and real datasets, to illustrate their computational efficiency, relevance and applicability to real-world scenarios including geophysical data.
@@ -12,7 +19,7 @@ Optimal transport (OT) is a powerful framework to compare probability measures, 
 
 ```
 @article{bonet2024slicing,
-    title={Slicing Unbalanced Optimal Transport},
+    title={{Slicing Unbalanced Optimal Transport}},
     author={Clément Bonet and Kimia Nadjahi and Thibault Séjourné and Kilian Fatras and Nicolas Courty},
     year={2024},
     journal={Transactions on Machine Learning Research}
